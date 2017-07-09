@@ -1,0 +1,577 @@
+<!doctype html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/lib/w3.css">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/3/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+<style>
+html{
+background:url("rose-twitter-background-backgrounds-themes-wallpaper-elegant-images-scorned.jpg") no-repeat center center fixed;
+background-size:cover;
+}
+.table1 {
+    opacity: 1;
+    filter: alpha(opacity=50); /* For IE8 and earlier */
+}
+.table1:hover {
+    opacity: 0.733;
+    filter: alpha(opacity=50); /* For IE8 and earlier */
+}
+.table1{
+background-size: cover;
+background-repeat: no-repeat !important;
+}
+<!--/*.table1 {
+	-moz-background-size: cover;
+	-webkit-background-size: cover;
+	background-size: cover;
+	background-position: top center !important;
+	background-repeat: no-repeat !important;
+	background-attachment: fixed;
+}*/-->
+* {box-sizing:border-box}
+
+<!--/* Slideshow container */-->
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+.mySlides {
+    display: none;
+}
+.home marquee{
+    color:blue;
+
+}
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+}
+a.button1{
+-webkit-appearance:none;
+-moz-appearance:none;
+appearance:button;
+text-decoration:none;
+color:red;
+}
+a.button2{
+-webkit-appearance:none;
+-moz-appearance:none;
+appearance:button;
+text-decoration:none;
+color:red;
+}
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor:pointer;
+  height: 13px;
+  width: 13px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+	from {opacity: .4} 
+	to {opacity: 1}
+	}
+.quotes{
+	font-family:ALGERIAN;
+	color:orange;
+	align:center;
+	font-size:26;
+	}
+.comment_font{
+	font-family:Arial Black;
+	}
+.submit{
+	background-color:#F88C00;
+	color:#FFF;
+	display:inline-block;
+	}
+a.getstarted_button:hover{
+	background-color: #555555;
+    color: white;
+	box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+	border-radius: 12px;
+	}
+a.getstarted_button{
+	background-color: white;
+    color: maroon;
+    border: 2px solid #4CAF50;
+	appearance:button;
+	text-decoration:none;
+	padding: 32px 16px;
+	font-size: 24px;
+	border-radius: 12px;
+	margin: 4px 2px;
+    -webkit-transition-duration: 0.4s;
+    transition-duration: 0.4s;
+    cursor: pointer;
+	}
+ul.dropd {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+	width:100%;
+}
+
+.dropd li {
+    float: left;
+}
+
+.dropd li a ,.dropdown{
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 15px 32px;
+    text-decoration: none;
+}
+
+.dropd li a:hover,dropdown:hover .dropbtn {
+    background-color: #111;
+}
+.dropd li.dropdown {
+    display: inline-block;
+}
+.active {
+    background-color: black;
+}
+
+.dropd .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #111;
+	min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropd .dropdown-content a {
+    color: white;
+    padding: 15px 32px;
+    text-decoration: none;
+    display: block;
+	text-align:left;
+}
+
+.dropd .dropdown-content a:hover {background-color: white;
+color:#111;}
+
+.dropd .dropdown:hover .dropdown-content {
+    display: block;
+}
+/*images style for categories*/
+.photo-grid {
+	margin: 1em auto;
+	max-width: 1106px;
+	text-align: center;
+}
+
+.photo-grid li {
+	border: 5px solid white;
+	display: inline-block;
+	margin: 1em;
+	width: 289px;
+	height: 170px;
+}
+
+.photo-grid img {
+	display: block;
+	height: auto;
+	max-width: 100%;
+}
+
+.photo-grid figure {
+	height: 163px;
+	overflow: hidden;
+	position: relative;
+	width: 280px;
+	transform: translate(-40px,-10%);
+}
+
+.photo-grid figcaption {
+	background: rgba(0,0,0,0.8);
+	color: white;
+	display: table;
+	height: 100%;
+	left: 0;
+	opacity: 0;
+	position: absolute;
+	right: 0;
+	top: 0;
+	z-index: 100;
+}
+
+.photo-grid figcaption p {
+	display: table-cell;
+	font-size: 1.5em;
+	position: relative;
+	top: -40px;
+	width: 289px;
+	vertical-align: middle;
+}
+
+.photo-grid li:hover figcaption {
+	opacity: 1;
+}
+.photo-grid img {
+	display: block;
+	height: auto;
+	-webkit-transition: all 300ms;
+	-moz-transition: all 300ms;
+	transition: all 300ms;
+	max-width: 100%;
+}
+
+.photo-grid li:hover img {
+	-webkit-transform: scale(1.4);
+	-moz-transform: scale(1.4);
+	transform: scale(1.4);
+}
+.photo-grid figcaption p {
+	display: table-cell;
+	font-size: 1.5em;
+	position: relative;
+	top: -40px;
+	width: 289px;
+	-webkit-transition: all 300ms ease-out;
+	-moz-transition: all 300ms ease-out;
+	transition: all 300ms ease-out;
+	vertical-align: middle;
+}
+
+.photo-grid li:hover figcaption p {
+	-moz-transform: none;
+	-webkit-transform: none;
+	transform: translateX(40px);
+}
+.photo-grid figcaption {
+	background: rgba(0,0,0,0.8);
+	color: white;
+	display: table;
+	height: 100%;
+	left: 0;
+	opacity: 0;
+	position: absolute;
+	right: 0;
+	top: 0;
+	-webkit-transition: all 300ms;
+	-moz-transition: all 300ms;
+	transition: all 300ms;
+	-webkit-transition-delay: 100ms;
+	-moz-transition-delay: 100ms;
+	transition-delay: 100ms;
+	z-index: 100;
+}
+.center{
+    display:block;
+	font: 16px/28px 'brandon-grotesque', sans-serif;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: 300;
+	vertical-align: baseline;
+	margin-top: 60px;
+	background: #333;
+	color:blue;
+}
+.center p{
+    text-align:center;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<table class="home_table" border="0" width="100%" bgcolor="black" >
+<tr>
+<td rowspan="3" title="image" width="10%"><img src="Blood Donates.jpg" height="100" width="150"/></td>
+<tr>
+<td colspan="3"></td>
+</table>
+
+<ul class="dropd">
+  <li class="dropdown"><a href="#welcome" class="dropbtn">Home</a></li>
+  <li class="dropdown"><a href="javascript:void(0)" class="dropbtn">Donators</a>
+  <div class="dropdown-content">
+    <a href="#">Link 1</a>
+    <a href="#">Link 2</a>
+    <a href="#">Link 3</a>
+  </div>
+  </li>
+  <li class="dropdown"><a href="javascript:void(0)" class="dropbtn">Seekers</a>
+    <div class="dropdown-content">
+    <a href="#">Link 1</a>
+    <a href="#">Link 2</a> 
+    <a href="#">Link 3</a>
+  </div></li>
+  
+  <li class="dropdown"><a href="#contacts">Contact Us</a>
+    <div class="dropdown-content">
+    <a href="#">Link 1</a>
+    <a href="#">Link 2</a>
+    <a href="#">Link 3</a>
+  </div></li>
+  <li class="dropdown"><a href="#about" class="dropbtn">About Us</a></li>
+  <li class="dropdown" style="float:right"><a href="#" class="dropbtn">Sign-Up/Sign-In</a></li>
+</ul>
+<div class="home" id="welcome">
+<marquee><h3>Welcome to the Donation Campaign</h3></marquee>
+</div>
+<!-- write the content and add getstarted button-->
+<div class="slideshow-container">
+  <div class="mySlides fade">
+    <div class="numbertext"></div>
+    <img src="t_68.jpg" style="width:100% ">
+    <div class="text"></div>
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext"></div>
+    <img src="donations.jpg" style="width:90% ">
+    <div class="text"></div>
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext"></div>
+    <img src="t_68.jpg" style="width:100% ">
+    <div class="text"></div>
+  </div>
+
+  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span> 
+  <span class="dot" onclick="currentSlide(2)"></span> 
+  <span class="dot" onclick="currentSlide(3)"></span> 
+</div>
+<div class="quotes"><center><p><h3>“The simplest acts of kindness are by far more powerful then<br/> a thousand heads bowing in prayer-Mahatma Gandhi”</h3> </p></center></div>
+<div>
+<br/>
+<br/>
+<br/>
+<div>
+<center/>
+<a href="#table" onclick="myFunction()" class="getstarted_button">GET STARTED</a>
+</div>
+<br/>
+<br/>
+<br/>
+<br/>
+</div>
+<div class="category" id="category" style="display:none;">
+<ul class="photo-grid">
+	<li>
+		<a href="http://www.flickr.com/photos/anirudhkoul/3536413126/">
+			<figure>
+				<img src="India soldier.jpg" height="180" width="320" alt="Army">
+				<figcaption><p>Army</p></figcaption>
+			</figure>
+		</a>
+	</li>
+	<li>
+		<a href="http://www.flickr.com/photos/aigle_dore/5237960181/">
+			<figure>
+				<img src="Old.jpg" height="180" width="320" alt="Needy">
+				<figcaption><p>Needy</p></figcaption>
+			</figure>
+		</a>
+	</li>
+	<li><a href="http://www.flickr.com/photos/aigle_dore/5238557764/">
+			<figure>
+				<img src="images (1).jpg" height="180" width="320" alt="Blood">
+				<figcaption><p>Blood</p></figcaption>
+			</figure>
+		</a>
+	</li>
+</ul>
+<ul class="photo-grid">
+	<li>
+		<a href="http://www.flickr.com/photos/anirudhkoul/3536413126/">
+			<figure>
+				<img src="36fa745.jpg" height="180" width="320" alt="Clothes">
+				<figcaption><p>Clothes</p></figcaption>
+			</figure>
+		</a>
+	</li>
+	<li>
+		<a href="http://www.flickr.com/photos/aigle_dore/5237960181/">
+			<figure>
+				<img src="book.png" height="180" width="320" alt="Books">
+				<figcaption><p>Books</p></figcaption>
+			</figure>
+		</a>
+	</li>
+	<li><a href="http://www.flickr.com/photos/aigle_dore/5238557764/">
+			<figure>
+				<img src="poor-Indian-kids.png" height="180" width="320" alt="Extras">
+				<figcaption><p>Extras</p></figcaption>
+			</figure>
+		</a>
+	</li>
+</ul>
+</div>
+
+<div align="center">
+<iframe width="560" height="315" src="https://www.youtube.com/embed/3t5M10gBVCc" frameborder="0" allowfullscreen></iframe>
+</div>
+<hr/>
+<!--video width="640" height="360"controls> 
+  <source src="https://www.youtube.com/embed/3t5M10gBVCc.webm" type=video/webm> 
+  <source src="https://www.youtube.com/embed/3t5M10gBVCc.ogg" type=video/ogg> 
+  <source src="https://www.youtube.com/embed/3t5M10gBVCc.mp4" type=video/mp4>
+  <source src="https://www.youtube.com/embed/3t5M10gBVCc.3gp" type=video/3gp>
+</video-->
+<div class="comment">
+<form method='post' style="color:blue; font-family:arial">
+  <p class="comment-comment">
+  <label for="comment">Comment</label> 
+  <textarea id="comment" name="comment" cols="45" rows="8" maxlength="65525" aria-required="true" required="required"></textarea></p>
+  <p id="error"></p>
+  <p class="comment-author" ><label for="author">Name: <span class="required">*</span>
+  </label>
+  <input id="author" name="author" type="text" value="" size="30" maxlength="245" aria-required="true" required="required" required></p>
+
+  <p class="comment-email"><label for="email">Email: <span class="required">*</span></label> 
+  <input id="email" name="email" type="email" value="" size="30" maxlength="100" aria-describedby="email-notes" aria-required="true" required="required"></p>
+
+  <p class="comment-url"><label for="url">Website:</label> <input id="url" name="url" type="url" value="" size="30" maxlength="200"></p>
+
+
+  <input type='button' onclick="getwords()" id="submit" value='Submit' />  
+  <!--img alt="" src="" srcset="" class="avatar avatar-65 photo" height="65" width="65"-->
+  <div class="display_comment" bgcolor="white"><hr/>
+  <cite class="comment_font">
+  <p id="author_name"></p>
+  </cite>
+  <p id="para"></p></div>
+</form>
+</div>
+<div id="footer-container">
+	<div id="footer" class="center">
+
+		<div class="container">
+			<p class="about"><a href="/"><i class="fa fa-home"></i> Home</a> | <a href="/about.cfm" rel="nofollow">About</a> | <a href="/contact.cfm" rel="nofollow">Contact</a> | <a href="/terms_of_use.cfm" rel="nofollow">Terms&nbsp;of&nbsp;Use</a> | <a href="/privacy_policy.cfm" rel="nofollow">Privacy&nbsp;Policy</a></p>
+
+			<p class="copyright">© 2017 Nudge. All Rights Reserved.</p>
+			<a target="_blank" title="follow me on twitter" href="http://www.twitter.com/PLACEHOLDER"><img alt="follow me on twitter" src="//login.create.net/images/icons/user/twitter_40x40.png" border=0></a>
+	<div class="contacts" id="contacts" style="color:blue">
+		<p>
+		contacts:9864664...
+		</p>
+		
+		</div>
+			</div>
+
+			</div>
+
+            
+
+    	</div>
+<script>
+var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+    var i;
+    var slides = document.getElementsByClassName("mySlides");
+    for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none"; 
+    }
+    slideIndex++;
+    if (slideIndex> slides.length) {slideIndex = 1} 
+    slides[slideIndex-1].style.display = "block"; 
+    setTimeout(showSlides, 2000); // Change image every 2 seconds
+}
+function getwords() {
+  text1 = author.value;
+  text2 = comment.value;
+	document.getElementById("author_name").innerHTML += '<p>'+text1
+	document.getElementById("para").innerHTML += '<p>'+text2
+	document.getElementById("comment").value = ""
+	document.getElementById("author").value = ""
+	document.getElementById("email").value = ""
+	document.getElementById("url").value = ""
+}
+
+function myFunction() {
+    var x = document.getElementById('category');
+    if (x.style.display === 'none') {
+        x.style.display = 'block';
+    } else {
+        x.style.display = 'none';
+    }
+}
+</script>
+</body>
+</html>
